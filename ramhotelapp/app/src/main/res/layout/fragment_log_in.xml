@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/LogInTitle"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="#30D359"
+        android:fontFamily="cursive"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="367dp"
+        android:layout_height="212dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etEmailLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="24dp" />
+
+        <com.example.surface.ramhotelapp.EditTextPasswords
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:drawableLeft="@drawable/ic_security_black_24dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CD3267"
+            android:text="Log In"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="399dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="343dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Don't have Account??"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnSignInLog"
+        android:layout_width="158dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/login_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="125dp"
+        android:background="@color/colorAccent"
+        android:onClick="signUp"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="399dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="463dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Have Technical Issue?? Contact"
+        android:textAlignment="center"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="399dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="493dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="ramgroupofhotels@gmail.com"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp" />
+
+</RelativeLayout>

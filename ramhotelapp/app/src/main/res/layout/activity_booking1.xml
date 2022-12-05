@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtEnterInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:text="Please enter Booking details"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etQtyPersonsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Quantity of Persons"
+        android:inputType="textPersonName|number"
+        android:padding="20dp" />
+    <TextView
+        android:id="@+id/etdate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:hint="*Click date button to add start Date"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Select date"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="200dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:padding="@dimen/padding10">
+
+        <TextView
+            android:id="@+id/overallactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overall charges: "
+            android:padding="@dimen/padding10"
+            android:textColor="@android:color/background_dark"
+            />
+
+        <TextView
+            android:id="@+id/gstactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GST + PST :  12%"
+            android:padding="@dimen/padding10"
+            android:textColor="@android:color/background_dark"
+            />
+
+        <TextView
+            android:id="@+id/totalcostactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:padding="@dimen/padding10"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            />
+        <Button
+        android:id="@+id/btnBookactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="120dp"
+        android:background="#19EA09"
+        android:text="Book Now"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

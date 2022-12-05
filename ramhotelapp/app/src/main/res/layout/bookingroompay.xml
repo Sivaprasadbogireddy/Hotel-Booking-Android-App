@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtEnterInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:text="Please Enter Booking details"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etNumberOfDays1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Number of Days"
+        android:inputType="textPersonName|number"
+        android:padding="20dp" />
+    <EditText
+        android:id="@+id/etNumberOfGuests1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Number of Guests"
+        android:inputType="textPersonName|number"
+        android:padding="20dp" />
+
+    <TextView
+        android:id="@+id/etdate2"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:hint="*Click date button to add start Date"
+        android:padding="20dp" />
+    <Button
+        android:id="@+id/calendarroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="Set date" />
+
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:padding="@dimen/padding10">
+
+        <TextView
+            android:id="@+id/overallroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overall charges: "
+            android:padding="@dimen/padding10"
+            android:textColor="@android:color/background_dark"
+            />
+
+        <TextView
+            android:id="@+id/gstroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GST + PST :  12%"
+            android:padding="@dimen/padding10"
+            android:textColor="@android:color/background_dark"
+            />
+
+        <TextView
+            android:id="@+id/totalcostroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:padding="@dimen/padding10"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBookroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="120dp"
+        android:background="#19EA09"
+        android:onClick="showAlertDialog"
+        android:text="Pay Now"
+        android:textStyle="bold"/>
+
+</LinearLayout>
